@@ -9,5 +9,7 @@ Images can be uploaded in real-time with content description either from apps li
 Firebase realtime database, storage, authentication etc are used on the back-end of this application.
 
 Icons by Google (Attribution): <a href="https://www.flaticon.com/authors/google" title="Google">Google</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+
 User Interface of post activity->	https://github.com/hendraanggrian/socialview 
+
 Image Cropper->	https://github.com/ArthurHub/Android-Image-Cropper 
