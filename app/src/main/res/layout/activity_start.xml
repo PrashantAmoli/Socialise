@@ -2,8 +2,9 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+<!--background-->
 
     <ImageView
         android:id="@+id/iconImage"
@@ -44,7 +45,8 @@
             android:layout_marginRight="20dp"
             android:background="@drawable/button_background"
             android:text="@string/login"
-            android:textAllCaps="false" />
+            android:textAllCaps="false"
+            android:backgroundTint="@color/ic_launcher_background"/>
 
         <Button
             android:id="@+id/register"
@@ -57,7 +59,8 @@
             android:layout_marginRight="20dp"
             android:background="@drawable/button_background"
             android:text="@string/register"
-            android:textAllCaps="false" />
+            android:textAllCaps="false"
+            android:backgroundTint="@color/ic_launcher_background"/>
 
 
     </LinearLayout>

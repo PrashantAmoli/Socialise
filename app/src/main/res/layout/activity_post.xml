@@ -1,24 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PostActivity">
+    android:elevation="25px"
+    android:orientation="vertical"
+    tools:context=".PostActivity"
+    android:background="#021960">
 
     <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/bar"
         android:background="?android:attr/windowBackground">
 
         <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="?android:attr/windowBackground"
-            android:id="@+id/toolbar">
+            android:background="#071549"
+            android:elevation="25px">
 
+            <!--            android:background="?android:attr/fullDark"-->
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -28,18 +32,21 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_alignParentStart="true"
+                    android:elevation="5dp"
                     android:padding="5dp"
-                    android:src="@drawable/cancel" />
+                    android:src="@drawable/cancel"
+                    app:tint="@color/colorWhite"/>
+
                 <TextView
+                    android:id="@+id/post"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="POST"
-                    android:id="@+id/post"
-                    android:textSize="18sp"
                     android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
                     android:layout_marginRight="15dp"
-                    android:textColor="@color/colorPrimary"
-                    android:layout_centerVertical="true"/>
+                    android:text="POST"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
 
             </RelativeLayout>
 
@@ -50,26 +57,31 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="10dp">
 
         <ImageView
+            android:id="@+id/imageAdded"
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:layout_gravity="center"
             android:scaleType="centerInside"
-            android:src="@mipmap/ic_launcher"
-            android:id="@+id/imageAdded"/>
+            android:src="@mipmap/ic_launcher" />
 
         <com.hendraanggrian.appcompat.widget.SocialAutoCompleteTextView
+            android:id="@+id/description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:hint="Description..."
             android:maxLines="5"
-            android:id="@+id/description"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textColorLink="#9A7878"
+            app:hashtagColor="#D4D5DC"
             app:socialFlags="hashtag|mention"
-            app:hashtagColor="@color/colorPrimary"/>
+            android:background="#071549"/>
 
     </LinearLayout>
 

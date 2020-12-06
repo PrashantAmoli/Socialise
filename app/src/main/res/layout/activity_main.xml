@@ -4,13 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@android:color/black">
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/fragment_container"
-        android:layout_above="@id/bottom"/>
+        android:layout_above="@id/bottom"
+        android:background="#021457"
+        />
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
@@ -22,10 +25,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/bottom_navigation"
-            app:itemIconTint="@color/selector"
             app:labelVisibilityMode="unlabeled"
-            android:background="?android:attr/windowBackground"
-            app:menu="@menu/bottom_menu"/>
+            app:itemIconTint="@color/selector"
+            app:menu="@menu/bottom_menu"
+            android:background="#090B35"
+            />
 
 
     </com.google.android.material.appbar.AppBarLayout>

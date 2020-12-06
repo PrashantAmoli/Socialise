@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="match_parent"
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#021960"
+    >
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/bar"
-        android:background="?android:attr/windowBackground">
+        android:background="#090B35"
+        >
 
+<!--        android:background="?android:attr/windowBackground"-->
         <androidx.appcompat.widget.Toolbar
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/toolbar"
-            android:background="?android:attr/windowBackground">
+            >
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -35,8 +40,9 @@
                     android:layout_marginTop="5dp"
                     android:layout_toEndOf="@+id/logo"
                     android:text="@string/app_name"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="#FF4A4A"/>
 
                 <ImageView
                     android:layout_width="40dp"
@@ -44,7 +50,8 @@
                     android:layout_alignParentEnd="true"
                     android:layout_marginEnd="10dp"
                     android:padding="3dp"
-                    android:src="@drawable/message" />
+                    android:src="@drawable/message"
+                    app:tint="@color/colorWhite" />
 
             </RelativeLayout>
 
