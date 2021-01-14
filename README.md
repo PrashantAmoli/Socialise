@@ -5,14 +5,17 @@ I developed this application to learn Android Development. To provide additional
 <hr>
 Preview=> https://youtu.be/_k6Q8ORebTI
 <hr>
-<img src="./Socialise/Preview/start.jpg" height ="200">
-<img src="./Socialise/Preview/register.jpg" height ="200">
-<img src="./Socialise/Preview/login.jpg" height ="200">
-<img src="./Socialise/Preview/post.jpg" height ="200">
-<img src="./Socialise/Preview/Crop.jpg" height ="200">
-<img src="./Socialise/Preview/description.jpg" height ="200">
-<img src="./Socialise/Preview/profile.jpg" height ="200">
+<p float="left">
+  <img src="./Socialise/Preview/start.jpg" height ="200">
+  <img src="./Socialise/Preview/register.jpg" height ="200">
+  <img src="./Socialise/Preview/login.jpg" height ="200">
+  <img src="./Socialise/Preview/post.jpg" height ="200">
+  <img src="./Socialise/Preview/Crop.jpg" height ="200">
+  <img src="./Socialise/Preview/description.jpg" height ="200">
+  <img src="./Socialise/Preview/profile.jpg" height ="200">
+</p>
 <hr>
+
 
 Icons by Google (Attribution): <a href="https://www.flaticon.com/authors/google" title="Google">Google</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
 
